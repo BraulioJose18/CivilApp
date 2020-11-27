@@ -25,7 +25,7 @@
         android:columnCount="2">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/historial"
+            android:id="@+id/contHumedad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -51,6 +51,7 @@
                     android:src="@drawable/ic_temporal" />
 
                 <TextView
+                    android:id="@+id/textContHumedad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CONTENIDO DE HUMEDAD"
@@ -62,7 +63,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/calendario"
+            android:id="@+id/limContraccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -88,6 +89,7 @@
                     android:src="@drawable/ic_temporal" />
 
                 <TextView
+                    android:id="@+id/textLimContraccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LÍMITE DE CONTRACCIÓN"
@@ -99,7 +101,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/staff"
+            android:id="@+id/denMax"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -125,6 +127,7 @@
                     android:src="@drawable/ic_temporal" />
 
                 <TextView
+                    android:id="@+id/textDenMax"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="DENSIDAD MÁXIMA"
@@ -136,7 +139,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/reservas"
+            android:id="@+id/denMin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -162,6 +165,7 @@
                     android:src="@drawable/ic_temporal" />
 
                 <TextView
+                    android:id="@+id/textDenMin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="DENSIDAD MÍNIMA"
@@ -173,7 +177,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/perfil"
+            android:id="@+id/gravEspSolidos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -199,6 +203,7 @@
                     android:src="@drawable/ic_temporal"  />
 
                 <TextView
+                    android:id="@+id/textGravEspSolidos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="GRAVEDAD ESPECÍFICA\n DE LOS SÓLIDOS"
@@ -210,7 +215,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/acerca"
+            android:id="@+id/denNatParafina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -236,6 +241,7 @@
                     android:src="@drawable/ic_temporal"  />
 
                 <TextView
+                    android:id="@+id/textDenNatParafina"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="DENSIDAD NATURAL\n CON PARAFINA"
@@ -247,7 +253,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/perfil2"
+            android:id="@+id/permCargaConstante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"
@@ -273,6 +279,7 @@
                     android:src="@drawable/ic_temporal" />
 
                 <TextView
+                    android:id="@+id/textPermCargaConstante"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PERMEAMETRO DE\n CARGA CONSTANTE"
@@ -284,7 +291,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/acerca2"
+            android:id="@+id/permCargaVariable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"
@@ -310,6 +317,7 @@
                     android:src="@drawable/ic_temporal" />
 
                 <TextView
+                    android:id="@+id/textPermCargaVariable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PERMEAMETRO DE\n CARGA VARIABLE"

@@ -9,7 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".formula.FormPermeametroCargaVariable"></activity>
+        <activity android:name=".formula.FormPermeametroCargaConstante" />
+        <activity android:name=".formula.FormLimiteContraccion" />
+        <activity android:name=".formula.FormGravedadEspecifica" />
+        <activity android:name=".formula.FormDensidadNatural" />
+        <activity android:name=".formula.FormDensidadMinima" />
+        <activity android:name=".formula.FormDensidadMaxima" />
+        <activity android:name=".formula.FormContenidoHumedad" />
+        <activity android:name=".informacion.PermeametroCargaVariable" />
+        <activity android:name=".informacion.PermeametroCargaConstante" />
+        <activity android:name=".informacion.GravedadEspecifica" />
+        <activity android:name=".informacion.DensidadNatural" />
+        <activity android:name=".informacion.DensidadMinima" />
+        <activity android:name=".informacion.DensidadMaxima" />
+        <activity android:name=".informacion.LimiteContraccion" />
+        <activity android:name=".informacion.ContenidoHumedad" />
+        <activity android:name=".Opciones" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Bienvenida">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
