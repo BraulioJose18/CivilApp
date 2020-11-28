@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.practica02.civilapp.R;
 
-public class PermeametroCargaVariable extends AppCompatActivity {
+public class InfoLimiteContraccion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inf_permeametro_carga_variable);
+        setContentView(R.layout.activity_inf_limite_contraccion);
     }
 }

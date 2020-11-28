@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.practica02.civilapp.R;
 
-public class DensidadMinima extends AppCompatActivity {
+public class InfoDensidadMinima extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
