@@ -6,4 +6,241 @@
     android:layout_height="match_parent"
     tools:context=".formula.FormLimiteContraccion">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="LÍMITE DE CONTRACCIÓN"
+        android:textColor="@color/cherry"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fórmula a utilizar:"
+                android:textColor="@color/cherry"
+                android:textSize="18sp"
+                android:layout_marginStart="20sp"
+                android:textStyle="italic|bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:padding="4sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/lim_contrac"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donde:"
+                android:textColor="@color/cherry"
+                android:textSize="18sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="w%: Contenido de Humedad "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/limContracContHumedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el contenido de humedad"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whg: Peso del mercurio"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/limContracPesoMercurio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso del mercurio"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whg-r: Peso del mercurio rebalsado"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/limContracPesoMercurioRebalsado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso del mercurio rebalsado"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wd: Peso de la muestra seca"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/limContracPesoMuestraSeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso de la muestra seca"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yhg: Peso específico del mercurio"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/limContracPesoEspecMercurio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso especifico del mercurio"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/resultadoLimContrac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Resultado"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+            <Button
+                android:id="@+id/calLimContrac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:layout_marginBottom="40sp"
+                android:background="@drawable/button_style"
+                android:text="CALCULAR"
+                android:textColor="#FFFFFF"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
