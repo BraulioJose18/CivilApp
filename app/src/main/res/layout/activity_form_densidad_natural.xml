@@ -198,7 +198,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textStyle="italic"/>
 
 
