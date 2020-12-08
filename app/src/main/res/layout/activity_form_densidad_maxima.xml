@@ -97,7 +97,7 @@
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
                 android:textStyle="italic"
-                android:inputType="number"/>
+                android:inputType="textPersonName"/>
 
             <TextView
                 android:id="@+id/textView12"
@@ -123,7 +123,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -148,7 +148,7 @@
                 android:hint="Ingrese el área de la base"
                 android:ems="10"
                 android:padding="10dp"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
                 android:textStyle="italic"/>
@@ -174,7 +174,7 @@
                 android:background="@drawable/round_border"
                 android:hint="Ingrese la altura del molde"
                 android:ems="10"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
@@ -204,7 +204,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView

@@ -88,7 +88,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -115,7 +115,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -142,7 +142,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -169,7 +169,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -196,7 +196,7 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="number"
+                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView

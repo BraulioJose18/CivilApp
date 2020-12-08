@@ -11,11 +11,11 @@ import com.practica02.civilapp.R;
 
 public class FormPermeametroCargaConstante extends AppCompatActivity {
 
-    EditText volAgua, longMuestra, areaSeccTransversal, altCargaHidraulica, tiempo, resultado;
+    EditText volAgua, longMuestra, areaSeccTransversal, altCargaHidraulica, tiempo, resultado, diametro;
 
     Button calcular;
 
-    double almVolAgua, almLongMuestra, almAreaSeccTransversal, almAltCargaHidraulica, almTiempo, almResultado;
+    double almVolAgua, almLongMuestra, almAreaSeccTransversal, almAltCargaHidraulica, almTiempo, almDiametro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,11 @@ public class FormPermeametroCargaConstante extends AppCompatActivity {
 
         volAgua = (EditText) findViewById(R.id.permConstanteVolumenAgua);
         longMuestra = (EditText) findViewById(R.id.permConstanteLongMuestra);
-        areaSeccTransversal = (EditText) findViewById(R.id.permConstanteAreaSeccTransversal);
+        diametro = (EditText) findViewById(R.id.permConstanteDiametro);
         altCargaHidraulica = (EditText) findViewById(R.id.permConstanteAltCargaHidraulica);
         tiempo = (EditText) findViewById(R.id.permConstanteTiempo);
 
+        areaSeccTransversal = (EditText) findViewById(R.id.permConstanteAreaSeccTransversal);
         resultado = (EditText) findViewById(R.id.resultadoPermCargaConstante);
 
         calcular = (Button) findViewById(R.id.calPermConstante);
@@ -38,10 +39,15 @@ public class FormPermeametroCargaConstante extends AppCompatActivity {
 
                 almVolAgua = Double.parseDouble(volAgua.getText().toString());
                 almLongMuestra = Double.parseDouble(longMuestra.getText().toString());
-                almAreaSeccTransversal = Double.parseDouble(areaSeccTransversal.getText().toString());
+                almDiametro = Double.parseDouble(diametro.getText().toString());
+
+                almAreaSeccTransversal = Math.PI*(Math.pow(almDiametro,2)/4);
+                //almAreaSeccTransversal = Double.parseDouble(areaSeccTransversal.getText().toString());
+
                 almAltCargaHidraulica = Double.parseDouble(altCargaHidraulica.getText().toString());
                 almTiempo = Double.parseDouble(tiempo.getText().toString());
 
+                areaSeccTransversal.setText(almAreaSeccTransversal+"");
                 resultado.setText(calcularCoefPerm(almVolAgua,almLongMuestra,almAreaSeccTransversal,almAltCargaHidraulica,almTiempo)+"");
                 
             }

@@ -129,33 +129,6 @@
                 android:textStyle="italic"/>
 
             <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A: Área de la sección transversal"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:textStyle="italic|bold" />
-
-            <EditText
-                android:id="@+id/permConstanteAreaSeccTransversal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:layout_marginEnd="40sp"
-                android:background="@drawable/round_border"
-                android:hint="Ingrese el área de la sección transversal"
-                android:ems="10"
-                android:padding="10dp"
-                android:textColorHint="@color/cherry"
-                android:textColor="@color/cherry"
-                android:inputType="textPersonName"
-                android:textStyle="italic"/>
-
-            <TextView
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -210,6 +183,63 @@
                 android:textStyle="italic"/>
 
             <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D: Diámetro"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/permConstanteDiametro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el diámetro"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A: Área de la sección transversal"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/permConstanteAreaSeccTransversal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:enabled="false"
+                android:hint=""
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="textPersonName"
+                android:textStyle="italic"/>
+
+
+            <TextView
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -236,7 +266,6 @@
                 android:textColor="@color/cherry"
                 android:inputType="textPersonName"
                 android:textStyle="italic"/>
-
 
             <Button
                 android:id="@+id/calPermConstante"
