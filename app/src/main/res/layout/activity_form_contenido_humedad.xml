@@ -73,33 +73,6 @@
                 android:textStyle="italic|bold" />
 
             <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="%w: Contenido de humedad"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:textStyle="italic|bold" />
-
-            <EditText
-                android:id="@+id/contenidoHumedad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:layout_marginEnd="40sp"
-                android:background="@drawable/round_border"
-                android:hint="Ingrese el contenido de humedad"
-                android:ems="10"
-                android:padding="10dp"
-                android:textColorHint="@color/cherry"
-                android:textColor="@color/cherry"
-                android:inputType="textPersonName"
-                android:textStyle="italic"/>
-
-            <TextView
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,6 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
                 android:layout_marginStart="40sp"
+                android:inputType="number"
                 android:layout_marginEnd="40sp"
                 android:background="@drawable/round_border"
                 android:hint="Ingrese el peso de la muestra húmeda"
@@ -123,7 +97,6 @@
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -144,13 +117,13 @@
                 android:layout_marginTop="10sp"
                 android:layout_marginStart="40sp"
                 android:layout_marginEnd="40sp"
+                android:inputType="number"
                 android:background="@drawable/round_border"
                 android:hint="Ingrese el peso de la muestra seca"
                 android:ems="10"
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
             <TextView
@@ -175,6 +148,7 @@
                 android:hint="Resultado"
                 android:ems="10"
                 android:padding="10dp"
+                android:enabled="false"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
                 android:inputType="textPersonName"
@@ -191,7 +165,6 @@
                 android:background="@drawable/button_style"
                 android:text="CALCULAR"
                 android:textColor="#FFFFFF"/>
-
 
         </LinearLayout>
     </ScrollView>

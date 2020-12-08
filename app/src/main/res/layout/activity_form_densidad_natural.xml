@@ -69,7 +69,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="w%: Contenido de Humedad "
+                android:text="Wm: Peso de la muestra"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_marginTop="10sp"
@@ -77,7 +77,116 @@
                 android:textStyle="italic|bold" />
 
             <EditText
-                android:id="@+id/limContracContHumedad"
+                android:id="@+id/denNatPesoMuestra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso de la muestra"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wm+pa: Peso de la muestra + parafina"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatPesoMuestraMasParafina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso de la muestra + parafina"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wp+w: Peso del picnómetro + agua"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatPesoPicnoMasAgua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso del picnómetro + agua"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wm+pa+p+w: Peso de la muestra + picnómetro + agua + parafina"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatPesoMuestraMasPicnoMasAguaMasParafina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint="Ingrese el peso de la muestra + picnómetro + agua + parafina"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="w: Contenido de humedad"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatContHumedad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
@@ -92,92 +201,12 @@
                 android:inputType="textPersonName"
                 android:textStyle="italic"/>
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Whg: Peso del mercurio"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:textStyle="italic|bold" />
-
-            <EditText
-                android:id="@+id/limContracPesoMercurio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:layout_marginEnd="40sp"
-                android:background="@drawable/round_border"
-                android:hint="Ingrese el peso del mercurio"
-                android:ems="10"
-                android:padding="10dp"
-                android:textColorHint="@color/cherry"
-                android:textColor="@color/cherry"
-                android:inputType="textPersonName"
-                android:textStyle="italic"/>
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Whg-r: Peso del mercurio rebalsado"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:textStyle="italic|bold" />
-
-            <EditText
-                android:id="@+id/limContracPesoMercurioRebalsado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:layout_marginEnd="40sp"
-                android:background="@drawable/round_border"
-                android:hint="Ingrese el peso del mercurio rebalsado"
-                android:ems="10"
-                android:padding="10dp"
-                android:textColorHint="@color/cherry"
-                android:textColor="@color/cherry"
-                android:inputType="textPersonName"
-                android:textStyle="italic"/>
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Wd: Peso de la muestra seca"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:textStyle="italic|bold" />
-
-            <EditText
-                android:id="@+id/limContracPesoMuestraSeca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginStart="40sp"
-                android:layout_marginEnd="40sp"
-                android:background="@drawable/round_border"
-                android:hint="Ingrese el peso de la muestra seca"
-                android:ems="10"
-                android:padding="10dp"
-                android:textColorHint="@color/cherry"
-                android:textColor="@color/cherry"
-                android:inputType="textPersonName"
-                android:textStyle="italic"/>
 
             <TextView
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Yhg: Peso específico del mercurio"
+                android:text="Yw: Densidad del agua"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_marginTop="10sp"
@@ -185,26 +214,28 @@
                 android:textStyle="italic|bold" />
 
             <EditText
-                android:id="@+id/limContracPesoEspecMercurio"
+                android:id="@+id/denNatDenAgua"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
                 android:layout_marginStart="40sp"
                 android:layout_marginEnd="40sp"
                 android:background="@drawable/round_border"
-                android:hint="Ingrese el peso especifico del mercurio"
+                android:hint="1"
+                android:text="1"
+                android:enabled="false"
                 android:ems="10"
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
                 android:textColor="@color/cherry"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textStyle="italic"/>
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/textView20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Resultado"
+                android:text="Ypa: Densidad de la parafina"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_marginTop="10sp"
@@ -212,14 +243,101 @@
                 android:textStyle="italic|bold" />
 
             <EditText
-                android:id="@+id/resultadoLimContrac"
+                android:id="@+id/denNatDenParafina"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
                 android:layout_marginStart="40sp"
                 android:layout_marginEnd="40sp"
                 android:background="@drawable/round_border"
-                android:hint="Resultado"
+                android:enabled="false"
+                android:hint="0.934"
+                android:text="0.934"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESULTADO Vm: Volumen de la muestra"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatResulVolMuestra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint=""
+                android:enabled="false"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESULTADO Yw: Densidad natural"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatResulDenNat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint=""
+                android:enabled="false"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="@color/cherry"
+                android:textColor="@color/cherry"
+                android:inputType="number"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESULTADO Yd: Densidad seca"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/denNatResulDenSeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="40sp"
+                android:background="@drawable/round_border"
+                android:hint=""
+                android:enabled="false"
                 android:ems="10"
                 android:padding="10dp"
                 android:textColorHint="@color/cherry"
@@ -228,7 +346,7 @@
                 android:textStyle="italic"/>
 
             <Button
-                android:id="@+id/calLimContrac"
+                android:id="@+id/calDenNat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"

@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.practica02.civilapp.R;
 
-public class FormPermeametroCargaVariable extends AppCompatActivity {
+public class    FormPermeametroCargaVariable extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
