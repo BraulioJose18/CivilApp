@@ -10,6 +10,8 @@ import android.widget.EditText;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class FormDensidadNatural extends AppCompatActivity {
 
     EditText pesoMuestra;
@@ -62,14 +64,16 @@ public class FormDensidadNatural extends AppCompatActivity {
                 almDenAgua = Double.parseDouble(denAgua.getText().toString());
                 almDenParafina = Double.parseDouble(denParafina.getText().toString());
 
+                DecimalFormat formato = new DecimalFormat("#.###");
+
                 resulVolMuestra = calcularVolMuestra(almPesoMuestraParafina,almPesoPicnometroAgua,almPesoMuestraPicnoAguaParafina,almPesoMuestra,almDenAgua,almDenParafina);
 
                 resulDenNat = calcularDenNat(almPesoMuestra, resulVolMuestra);
                 resulDenSeca = calcularDenSeca(resulDenNat,almContHumedad);
                 //Texto
-                resultVolMuestra.setText(resulVolMuestra+"");
-                resultDenNat.setText(resulDenNat+"");
-                resultDenSeca.setText(resulDenSeca+"");
+                resultVolMuestra.setText(formato.format(resulVolMuestra)+"");
+                resultDenNat.setText(formato.format(resulDenNat)+"");
+                resultDenSeca.setText(formato.format(resulDenSeca)+"");
 
 
             }

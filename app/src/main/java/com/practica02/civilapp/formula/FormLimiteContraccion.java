@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class FormLimiteContraccion extends AppCompatActivity {
 
     EditText contHumedad;
@@ -44,7 +46,9 @@ public class FormLimiteContraccion extends AppCompatActivity {
                 almMuestraSeca = Double.parseDouble(pesoMuestraSeca.getText().toString());
                 almPesoEspMerc = Double.parseDouble(pesoEspecificoMercurio.getText().toString());
 
-                resultadoLimContrac.setText(calcularLimContrac(almContHumedad,almPesoMercurio,almPesoMercRebalsado,almMuestraSeca,almPesoEspMerc)+"");
+                DecimalFormat formato = new DecimalFormat("#.###");
+
+                resultadoLimContrac.setText(formato.format(calcularLimContrac(almContHumedad,almPesoMercurio,almPesoMercRebalsado,almMuestraSeca,almPesoEspMerc))+"");
 
 
             }

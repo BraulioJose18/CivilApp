@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class FormContenidoHumedad extends AppCompatActivity {
 
     EditText contHumedad;
@@ -41,7 +43,11 @@ public class FormContenidoHumedad extends AppCompatActivity {
                 strMuestraSeca = pesoMuestraSeca.getText().toString();
                 almMuestraHumeda = Double.parseDouble(strMuestraHumeda);
                 almMuestraSeca = Double.parseDouble(strMuestraSeca);
-                contHumedad.setText(calcularContenidoHumedad(almMuestraHumeda,almMuestraSeca)+" %");
+
+                DecimalFormat formato = new DecimalFormat("#.###");
+                double resul = calcularContenidoHumedad(almMuestraHumeda,almMuestraSeca);
+                String almrRsul = formato.format(resul)+"";
+                contHumedad.setText(almrRsul+ "%");
             }
         });
 

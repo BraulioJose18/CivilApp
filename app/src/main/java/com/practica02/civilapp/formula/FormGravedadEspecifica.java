@@ -10,6 +10,8 @@ import android.widget.EditText;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class FormGravedadEspecifica extends AppCompatActivity {
 
     EditText pesoMuestraSeca;
@@ -39,7 +41,9 @@ public class FormGravedadEspecifica extends AppCompatActivity {
                 almPesoPicnometroAgua = Double.parseDouble(pesoPicnometroAgua.getText().toString());
                 almPesoPicnometroAguaMuestra = Double.parseDouble(pesoPicnometroAguaMuestra.getText().toString());
 
-                resultadoGravEsp.setText(calcularGravEsp(almPesoMuestraSeca,almPesoPicnometroAgua,almPesoPicnometroAguaMuestra)+"");
+                DecimalFormat formato = new DecimalFormat("#.###");
+
+                resultadoGravEsp.setText(formato.format(calcularGravEsp(almPesoMuestraSeca,almPesoPicnometroAgua,almPesoPicnometroAguaMuestra))+"");
             }
         });
     }

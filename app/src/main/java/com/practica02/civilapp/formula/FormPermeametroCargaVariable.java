@@ -10,6 +10,8 @@ import android.widget.EditText;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class    FormPermeametroCargaVariable extends AppCompatActivity {
 
     EditText longMuestra, areaSecTransversal, diamMuestra, areaBureta, diamBureta, tiempoPrueba, h, h1, resultado;
@@ -51,11 +53,11 @@ public class    FormPermeametroCargaVariable extends AppCompatActivity {
 
                 //almAreaSecTransversal = Double.parseDouble(areaSecTransversal.getText().toString());
                 //almAreaBureta = Double.parseDouble(areaBureta.getText().toString());
+                DecimalFormat formato = new DecimalFormat("#.###");
 
-
-                areaSecTransversal.setText(almAreaSecTransversal+"");
-                areaBureta.setText(almAreaBureta+"");
-                resultado.setText(calcularCoefPerm(almLongMuestra,almAreaSecTransversal,almAreaBureta,almTiempoPrueba,almH,almH1)+"");
+                areaSecTransversal.setText(formato.format(almAreaSecTransversal)+"");
+                areaBureta.setText(formato.format(almAreaBureta)+"");
+                resultado.setText(formato.format(calcularCoefPerm(almLongMuestra,almAreaSecTransversal,almAreaBureta,almTiempoPrueba,almH,almH1))+"");
 
 
             }

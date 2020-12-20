@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class FormDensidadMaxima extends AppCompatActivity {
 
     EditText pesoMuestraMolde;
@@ -50,7 +52,10 @@ public class FormDensidadMaxima extends AppCompatActivity {
                 almAlturaMolde = Double.parseDouble(strAlturaMolde);
                 almAsentamiento = Double.parseDouble(strAsentamiento);
 
-                resultadoDenMax.setText(calcularDensidadMaxima(almPesoMuestraMolde,almPesoMolde,almAreaBase,almAlturaMolde,almAsentamiento)+"");
+                DecimalFormat formato = new DecimalFormat("#.###");
+                double resul = calcularDensidadMaxima(almPesoMuestraMolde,almPesoMolde,almAreaBase,almAlturaMolde,almAsentamiento);
+                String almResul = formato.format(calcularDensidadMaxima(almPesoMuestraMolde,almPesoMolde,almAreaBase,almAlturaMolde,almAsentamiento))+"";
+                resultadoDenMax.setText(almResul);
             }
         });
 

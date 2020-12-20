@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import com.practica02.civilapp.R;
 
+import java.text.DecimalFormat;
+
 public class FormPermeametroCargaConstante extends AppCompatActivity {
 
     EditText volAgua, longMuestra, areaSeccTransversal, altCargaHidraulica, tiempo, resultado, diametro;
@@ -47,8 +49,10 @@ public class FormPermeametroCargaConstante extends AppCompatActivity {
                 almAltCargaHidraulica = Double.parseDouble(altCargaHidraulica.getText().toString());
                 almTiempo = Double.parseDouble(tiempo.getText().toString());
 
-                areaSeccTransversal.setText(almAreaSeccTransversal+"");
-                resultado.setText(calcularCoefPerm(almVolAgua,almLongMuestra,almAreaSeccTransversal,almAltCargaHidraulica,almTiempo)+"");
+                DecimalFormat formato = new DecimalFormat("#.###");
+
+                areaSeccTransversal.setText(formato.format(almAreaSeccTransversal)+"");
+                resultado.setText(formato.format(calcularCoefPerm(almVolAgua,almLongMuestra,almAreaSeccTransversal,almAltCargaHidraulica,almTiempo))+"");
                 
             }
         });

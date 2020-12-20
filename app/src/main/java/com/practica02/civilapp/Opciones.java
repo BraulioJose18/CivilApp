@@ -47,7 +47,7 @@ public class Opciones extends AppCompatActivity {
 
         String dato = getIntent().getStringExtra("name");
         String cadena = quitarSaltos(dato);
-        Log.d("prueba",cadena);
+        //Log.d("prueba",cadena);
         titleMenu.setText(dato);
         info.setOnClickListener(new View.OnClickListener() {
             @Override
